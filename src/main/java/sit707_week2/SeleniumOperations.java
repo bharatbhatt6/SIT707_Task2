@@ -117,14 +117,11 @@ public class SeleniumOperations {
         WebDriver driver = new ChromeDriver();
 
         try {
-            // Open the BIG W sign-up page
             driver.get(url);
-
-            // Locate the first name field and enter a value
+            
             WebElement firstNameElement = driver.findElement(By.id("signupForm-firstName"));
             firstNameElement.sendKeys("Ahsan");
-
-            // Locate the last name field and enter a value
+       
             WebElement lastNameElement = driver.findElement(By.id("signupForm-lastName"));
             lastNameElement.sendKeys("Habib");
             
@@ -136,12 +133,10 @@ public class SeleniumOperations {
             
             WebElement mobnum = driver.findElement(By.id("signupForm-MobileNo"));
             mobnum.sendKeys("0488173456");
-
-            // Locate the email address field and enter a value
+            
             WebElement emailElement = driver.findElement(By.id("signupForm-email"));
             emailElement.sendKeys("ahsan@example.com");
-
-            // Find the 'Sign me up' button by its CSS class and click on it
+           
             WebElement password = driver.findElement(By.id("signupForm-password"));
             password.sendKeys("yourpassword"); 
 
